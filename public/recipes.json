@@ -1,0 +1,314 @@
+[
+    {
+        "recipe_image": "https://i.postimg.cc/mrxx7rqF/chicken-basil.jpg",
+        "recipe_id": "1",
+        "recipe_name": "Chicken Basil Stir Fry",
+        "description": "A flavorful stir fry with tender chicken and fresh basil leaves.",
+        "Ingredients": [
+            "550 g chicken",
+            "120 ml soy sauce",
+            "200 g basil leaf",
+            "400 g mushroom"
+        ],
+        "preparing_time": "30 min",
+        "calories": "320 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/L4WxJbGJ/spaghetti-bolognese.webp",
+        "recipe_id": "2",
+        "recipe_name": "Spaghetti Bolognese",
+        "description": "Classic Italian pasta with a rich tomato and meat sauce.",
+        "Ingredients": [
+            "200 g spaghetti",
+            "250 g ground beef",
+            "1 onion",
+            "2 garlic cloves",
+            "400 g tomato sauce",
+            "50 g parmesan cheese"
+        ],
+        "preparing_time": "45 min",
+        "calories": "450 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/T3MQ9WdG/vegetable-curry.jpg",
+        "recipe_id": "3",
+        "recipe_name": "Vegetable Curry",
+        "description": "A vibrant vegetable curry with a blend of spices and coconut milk.",
+        "Ingredients": [
+            "200 g carrots",
+            "150 g cauliflower",
+            "1 onion",
+            "200 ml coconut milk",
+            "2 tbsp curry powder",
+            "150 g spinach"
+        ],
+        "preparing_time": "40 min",
+        "calories": "300 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/gJSNqSJB/salmon-grilled.jpg",
+        "recipe_id": "4",
+        "recipe_name": "Grilled Salmon",
+        "description": "Deliciously grilled salmon with a zesty lemon and herb marinade.",
+        "Ingredients": [
+            "300 g salmon fillets",
+            "2 tbsp olive oil",
+            "1 lemon",
+            "2 garlic cloves",
+            "1 tbsp fresh parsley"
+        ],
+        "preparing_time": "25 min",
+        "calories": "350 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/6p4J7ZHX/avocado-salad.jpg",
+        "recipe_id": "5",
+        "recipe_name": "Avocado Salad",
+        "description": "A refreshing salad with ripe avocados, cherry tomatoes, and a light dressing.",
+        "Ingredients": [
+            "2 avocados",
+            "100 g cherry tomatoes",
+            "50 g red onion",
+            "2 tbsp olive oil",
+            "1 tbsp balsamic vinegar"
+        ],
+        "preparing_time": "15 min",
+        "calories": "220 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/Jnm9d2Rr/chocolate-cake.jpg",
+        "recipe_id": "6",
+        "recipe_name": "Chocolate Cake",
+        "description": "A rich and decadent chocolate cake with a smooth frosting.",
+        "Ingredients": [
+            "200 g flour",
+            "150 g sugar",
+            "100 g cocoa powder",
+            "3 eggs",
+            "200 ml milk",
+            "150 g butter"
+        ],
+        "preparing_time": "60 min",
+        "calories": "500 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/NFCSFGmF/chicken-tacos.jpg",
+        "recipe_id": "7",
+        "recipe_name": "Chicken Tacos",
+        "description": "Soft tortillas filled with seasoned grilled chicken, salsa, and fresh toppings.",
+        "Ingredients": [
+            "300 g chicken breast",
+            "1 tbsp taco seasoning",
+            "4 tortillas",
+            "100 g lettuce",
+            "50 g cheese",
+            "2 tomatoes"
+        ],
+        "preparing_time": "20 min",
+        "calories": "350 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/kDrNfkdw/vegetarian-pizza.jpg",
+        "recipe_id": "8",
+        "recipe_name": "Vegetarian Pizza",
+        "description": "A crispy pizza topped with fresh vegetables, mozzarella, and tomato sauce.",
+        "Ingredients": [
+            "1 pizza dough",
+            "100 g mozzarella cheese",
+            "50 g bell pepper",
+            "100 g mushrooms",
+            "100 g spinach",
+            "200 ml tomato sauce"
+        ],
+        "preparing_time": "30 min",
+        "calories": "400 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/Y9psxLxj/fried-rice.jpg",
+        "recipe_id": "9",
+        "recipe_name": "Fried Rice",
+        "description": "A quick and tasty fried rice with vegetables and eggs.",
+        "Ingredients": [
+            "200 g rice",
+            "1 onion",
+            "100 g peas",
+            "2 eggs",
+            "2 tbsp soy sauce",
+            "1 tbsp sesame oil"
+        ],
+        "preparing_time": "25 min",
+        "calories": "300 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/jqMGZcmT/eggplant-parmesan.jpg",
+        "recipe_id": "10",
+        "recipe_name": "Eggplant Parmesan",
+        "description": "Crispy fried eggplant slices topped with marinara sauce and melted cheese.",
+        "Ingredients": [
+            "2 eggplants",
+            "100 g breadcrumbs",
+            "200 ml tomato sauce",
+            "100 g mozzarella cheese",
+            "50 g parmesan cheese"
+        ],
+        "preparing_time": "50 min",
+        "calories": "420 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/FFGQwNf2/beef-stew.jpg",
+        "recipe_id": "11",
+        "recipe_name": "Beef Stew",
+        "description": "A hearty stew with tender beef, carrots, and potatoes.",
+        "Ingredients": [
+            "500 g beef stew meat",
+            "4 carrots",
+            "4 potatoes",
+            "1 onion",
+            "1 liter beef broth",
+            "2 garlic cloves"
+        ],
+        "preparing_time": "90 min",
+        "calories": "600 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/pdkZRGDX/shrimp-pasta.jpg",
+        "recipe_id": "12",
+        "recipe_name": "Shrimp Pasta",
+        "description": "A creamy pasta dish with succulent shrimp and garlic butter sauce.",
+        "Ingredients": [
+            "200 g spaghetti",
+            "300 g shrimp",
+            "100 g heavy cream",
+            "2 garlic cloves",
+            "2 tbsp butter",
+            "1 tbsp parsley"
+        ],
+        "preparing_time": "25 min",
+        "calories": "450 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/L8tD065P/pumpkin-soup.jpg",
+        "recipe_id": "13",
+        "recipe_name": "Pumpkin Soup",
+        "description": "A creamy and comforting pumpkin soup, perfect for chilly days.",
+        "Ingredients": [
+            "500 g pumpkin",
+            "1 onion",
+            "2 garlic cloves",
+            "500 ml vegetable broth",
+            "100 ml cream",
+            "1 tbsp olive oil"
+        ],
+        "preparing_time": "40 min",
+        "calories": "250 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/q7HYz5hs/grilled-chicken.jpg",
+        "recipe_id": "14",
+        "recipe_name": "Grilled Chicken",
+        "description": "Tender grilled chicken marinated with lemon and herbs.",
+        "Ingredients": [
+            "500 g chicken breast",
+            "2 tbsp olive oil",
+            "1 lemon",
+            "1 tbsp rosemary",
+            "2 garlic cloves"
+        ],
+        "preparing_time": "30 min",
+        "calories": "300 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/TYwX6Fgh/caesar-salad.jpg",
+        "recipe_id": "15",
+        "recipe_name": "Caesar Salad",
+        "description": "A classic Caesar salad with crisp lettuce, croutons, and creamy dressing.",
+        "Ingredients": [
+            "200 g romaine lettuce",
+            "50 g croutons",
+            "50 g parmesan cheese",
+            "3 tbsp Caesar dressing",
+            "1 tbsp olive oil"
+        ],
+        "preparing_time": "15 min",
+        "calories": "250 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/YqJDssx5/pan-seared-tofu.jpg",
+        "recipe_id": "16",
+        "recipe_name": "Pan-Seared Tofu",
+        "description": "Crispy on the outside, soft on the inside, pan-seared tofu served with soy sauce.",
+        "Ingredients": [
+            "300 g firm tofu",
+            "2 tbsp soy sauce",
+            "1 tbsp sesame oil",
+            "1 tbsp garlic powder",
+            "1 tbsp sesame seeds"
+        ],
+        "preparing_time": "20 min",
+        "calories": "180 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/d33NbMpY/macaroni-cheese.jpg",
+        "recipe_id": "17",
+        "recipe_name": "Macaroni and Cheese",
+        "description": "Creamy macaroni with a cheesy sauce and a crunchy topping.",
+        "Ingredients": [
+            "200 g macaroni",
+            "150 g cheddar cheese",
+            "100 g mozzarella cheese",
+            "200 ml milk",
+            "2 tbsp butter",
+            "1 tbsp flour"
+        ],
+        "preparing_time": "25 min",
+        "calories": "500 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/cHmVqBJQ/chicken-schnitzel.jpg",
+        "recipe_id": "18",
+        "recipe_name": "Chicken Schnitzel",
+        "description": "Crispy breaded chicken cutlets served with lemon wedges.",
+        "Ingredients": [
+            "500 g chicken breast",
+            "100 g breadcrumbs",
+            "1 egg",
+            "2 tbsp flour",
+            "1 lemon",
+            "2 tbsp olive oil"
+        ],
+        "preparing_time": "30 min",
+        "calories": "400 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/tgdcPNWL/lentil-soup.webp",
+        "recipe_id": "19",
+        "recipe_name": "Lentil Soup",
+        "description": "A warm and hearty lentil soup with vegetables and spices.",
+        "Ingredients": [
+            "200 g lentils",
+            "2 carrots",
+            "1 onion",
+            "500 ml vegetable broth",
+            "2 garlic cloves",
+            "1 tsp cumin"
+        ],
+        "preparing_time": "45 min",
+        "calories": "280 calories"
+    },
+    {
+        "recipe_image": "https://i.postimg.cc/QMc2m3GY/banana-bread.jpg",
+        "recipe_id": "20",
+        "recipe_name": "Banana Bread",
+        "description": "A moist and delicious banana bread with a hint of vanilla.",
+        "Ingredients": [
+            "3 ripe bananas",
+            "200 g flour",
+            "150 g sugar",
+            "2 eggs",
+            "100 g butter",
+            "1 tsp vanilla extract"
+        ],
+        "preparing_time": "60 min",
+        "calories": "350 calories"
+    }
+]
