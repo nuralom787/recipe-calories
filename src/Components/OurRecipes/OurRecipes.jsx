@@ -73,14 +73,14 @@ const OurRecipes = () => {
 
 
     return (
-        <div className="text-center my-6">
+        <div className="text-center my-6 mx-2">
             <ToastContainer />
             <div className="space-y-6">
                 <h1 className="font-semibold text-4xl text-[#150B2B]">Our Recipes</h1>
-                <p className="font-normal text-base text-[#150B2B99]">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget <br /> urna volutpat curabitur elementum mauris aenean neque. </p>
+                <p className="font-normal text-base text-[#150B2B99] mx-4 lg:mx-0">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget <br /> urna volutpat curabitur elementum mauris aenean neque. </p>
             </div>
-            <div className="flex gap-6 my-6">
-                <div className="grid grid-cols-2 gap-6 w-4/6">
+            <div className="flex flex-col-reverse lg:flex-row gap-6 my-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full lg:w-4/6">
                     {
                         recipes.map((recipe, idx) => <Recipe
                             key={idx}
@@ -89,7 +89,7 @@ const OurRecipes = () => {
                         ></Recipe>)
                     }
                 </div>
-                <div className="w-2/6">
+                <div className="w-full lg:w-2/6">
                     <CookingTables
                         wantToCook={wantToCook}
                         handleCurrentlyCooking={handleCurrentlyCooking}
