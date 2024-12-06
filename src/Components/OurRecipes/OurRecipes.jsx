@@ -1,12 +1,18 @@
 import { useEffect, useState } from "react";
 import Recipe from "../Recipe/Recipe";
 import CookingTables from "../CookingTables/CookingTables";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const OurRecipes = () => {
     const [recipes, setRecipes] = useState([]);
     const [wantToCook, setWantToCook] = useState([]);
     const [currentlyCooking, setCurrentlyCooking] = useState([]);
+    const [totalPreparingTime, setTotalPreparingTime] = useState(0);
+    const [totalCalories, setTotalCalories] = useState(0);
 
+
+    // Load Recipes JSON Data.
     useEffect(() => {
         fetch("recipes.json")
             .then(res => res.json())
@@ -17,13 +23,42 @@ const OurRecipes = () => {
     }, []);
 
 
+    // Handle Total Preparing & Total Calories Calculation.
+    useEffect(() => {
+        for (const tt of currentlyCooking) {
+
+            // Set Total Preparing Time.
+            const newTTime = parseInt(tt.preparing_time);
+            const newTotalPreparingTime = totalPreparingTime + newTTime;
+            setTotalPreparingTime(newTotalPreparingTime);
+
+            // Set Total Calories.
+            const newTCalories = parseInt(tt.calories);
+            const newTotalCalories = totalCalories + newTCalories;
+            setTotalCalories(newTotalCalories);
+        };
+    }, [currentlyCooking]);
+
+
+    // Handle Recipe Item In Want To Cook.
     const handleWantToCook = (recipe) => {
+        for (const recipeItem of wantToCook) {
+            if (recipeItem.recipe_id === recipe.recipe_id) {
+                return toast.warning("This Recipe Item Already Exist!!", {
+                    autoClose: 2000
+                });
+            }
+        }
         const newWantCook = [...wantToCook, recipe];
         setWantToCook(newWantCook);
+        toast.success(`Recipe Item "${recipe.recipe_name}" Added Successfully!`, {
+            position: "top-center",
+            autoClose: 2000
+        });
     };
 
 
-
+    // Handle Recipe Item In Currently Cooking.
     const handleCurrentlyCooking = (id) => {
 
         // Update Want To Cook Table.
@@ -32,13 +67,14 @@ const OurRecipes = () => {
 
         // Add Currently Cooking Data.
         const newData = recipes.find(cc => cc.recipe_id === id);
-        const newCurrentlyCooking = [...currentlyCooking, newData]
+        const newCurrentlyCooking = [...currentlyCooking, newData];
         setCurrentlyCooking(newCurrentlyCooking);
-    }
+    };
 
 
     return (
         <div className="text-center my-6">
+            <ToastContainer />
             <div className="space-y-6">
                 <h1 className="font-semibold text-4xl text-[#150B2B]">Our Recipes</h1>
                 <p className="font-normal text-base text-[#150B2B99]">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget <br /> urna volutpat curabitur elementum mauris aenean neque. </p>
@@ -58,6 +94,8 @@ const OurRecipes = () => {
                         wantToCook={wantToCook}
                         handleCurrentlyCooking={handleCurrentlyCooking}
                         currentlyCooking={currentlyCooking}
+                        totalPreparingTime={totalPreparingTime}
+                        totalCalories={totalCalories}
                     ></CookingTables>
                 </div>
             </div>

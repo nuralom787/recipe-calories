@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import WantToCook from '../WantToCook/WantToCook';
 import CurrentlyCooking from '../CurrentlyCooking/CurrentlyCooking';
 
-const CookingTables = ({ wantToCook, handleCurrentlyCooking, currentlyCooking }) => {
+const CookingTables = ({ wantToCook, handleCurrentlyCooking, currentlyCooking, totalPreparingTime, totalCalories }) => {
 
     return (
         <div className='border rounded-2xl px-5 py-7 sticky top-2 overflow-y-auto max-h-screen'>
@@ -59,6 +59,21 @@ const CookingTables = ({ wantToCook, handleCurrentlyCooking, currentlyCooking })
                     <p className='pt-6'>No Data Available!!</p>
                 }
             </div>
+            {currentlyCooking.length ?
+                <div className='text-right flex justify-end items-center gap-4'>
+                    <div className='text-center'>
+                        <span className='font-medium text-base text-[#282828CC]'>Total Time =</span>
+                        <br />
+                        <span className='font-medium text-base text-[#282828CC]'>{totalPreparingTime} minutes</span>
+                    </div>
+                    <div className='text-center'>
+                        <span className='font-medium text-base text-[#282828CC]'>Total Calories =</span>
+                        <br />
+                        <span className='font-medium text-base text-[#282828CC]'>{totalCalories} Calories</span>
+                    </div>
+                </div>
+                : ""
+            }
         </div>
     );
 };
@@ -67,6 +82,8 @@ CookingTables.propTypes = {
     wantToCook: PropTypes.array.isRequired,
     currentlyCooking: PropTypes.array.isRequired,
     handleCurrentlyCooking: PropTypes.func.isRequired,
+    totalPreparingTime: PropTypes.number.isRequired,
+    totalCalories: PropTypes.number.isRequired,
 };
 
 export default CookingTables;
